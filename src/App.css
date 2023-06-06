@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.searchBar{
+    background: rgb(65, 63, 63);
+    color:white;
+    height:90vh;
+    width:650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top:15px;
+    left:400px;
+    border-radius: 500px;
+}
+
+#searchBox{
+    border-radius: 25px;
+    height:30px;
+    border: none;
+    margin-left: 31px;
+}
+
+#inputBox{
+    border-radius: 25px;
+    height:30px;
+    display: inline;
+    justify-content: space-evenly;
+    margin-left:10px;
+    border: none;
+}
+
+h2{
+    margin-top:30px;
+    color:rgb(8, 205, 215);
+}
+
+label{
+    color:rgb(8, 205, 215);
+    margin-right: 5px;
+}
+
+#submitBtn{
+   margin-left: 10px;
+   height:30px;
+   width:40px;
+   border-radius: 15px;
+   border: none;
+}

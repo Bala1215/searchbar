@@ -1,4 +1,5 @@
 import {useState,useRef} from 'react';
+import './App.css'
 
 function App() {
   
@@ -76,10 +77,12 @@ function App() {
   }
   return (
     <div className="searchBar">
-      search <input type='search' value={query} onChange={e=>setQuery(e.target.value)}/><br/><br/>
       <form onSubmit={onSubmit}>
-        New Item <input type='text' ref={inputRef} />
-        <button type='submit'>Add</button>
+       <label>Search</label>
+        <input id='searchBox' type='search' value={query} onChange={e=>setQuery(e.target.value)}/><br/><br/>
+        
+        <label>New Item</label> <input id='inputBox' type='text' ref={inputRef} />
+        <button id="submitBtn" type='submit'>Add</button>
       </form> 
       <h2>Items :</h2>
       {
